@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.local
+amplify_outputs.json
+.amplify/
+*.log
+.DS_Store
+coverage/
+
+# Frontend
+front/dist/
+front/node_modules/
+front/.env
+front/.env.local
+front/amplify_outputs.json
