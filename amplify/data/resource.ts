@@ -50,7 +50,6 @@ const schema = a.schema({
       fundingGoal: a.integer().required(),
       totalPledged: a.integer().default(0),
       selectedBidderId: a.id(),
-      selectedBid: a.belongsTo('Bid', 'selectedBidderId'),
       githubRepoUrl: a.string(),
       liveDemoUrl: a.string(),
       deliveryNotes: a.string(),

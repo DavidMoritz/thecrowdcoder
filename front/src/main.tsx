@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { RouterProvider } from '@tanstack/react-router';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Amplify } from 'aws-amplify';
-import outputs from './amplify_outputs.json';
+import outputs from '../../amplify_outputs.json';
 import { router } from './router';
 import { UserProvider } from './contexts/UserContext';
 import './index.css';

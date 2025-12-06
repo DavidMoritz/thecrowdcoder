@@ -24,6 +24,7 @@ You need to configure Google OAuth credentials for authentication.
    - `GOOGLE_CLIENT_ID`
    - `GOOGLE_CLIENT_SECRET`
 
+# TODO
 ## 2. Stripe Setup
 
 You need to set up Stripe for token purchases and builder payouts.
@@ -78,8 +79,7 @@ Deploy the backend to AWS using Amplify.
    npx ampx deploy --branch main
    ```
 
-5. After deployment, copy the generated `amplify_outputs.json` file to:
-   - `/front/src/amplify_outputs.json`
+Note: The `amplify_outputs.json` file will be automatically generated in the project root. The frontend is already configured to read it from there.
 
 ## 4. Environment Variables
 
