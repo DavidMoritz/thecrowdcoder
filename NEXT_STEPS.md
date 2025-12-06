@@ -55,34 +55,30 @@ You need to set up Stripe for token purchases and builder payouts.
 Deploy the backend to AWS using Amplify.
 
 ### Steps:
-1. Install Amplify CLI if not already installed:
-   ```bash
-   npm install -g @aws-amplify/cli
-   ```
+1. Ensure you have AWS credentials configured:
+   - Option A: Use AWS CLI: `aws configure` (if you have AWS CLI installed)
+   - Option B: Set environment variables: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`
+   - Get credentials from AWS IAM Console: https://console.aws.amazon.com/iam/
 
-2. Configure Amplify with your AWS credentials:
-   ```bash
-   amplify configure
-   ```
-
-3. Add secrets for Google OAuth:
+2. Add secrets for Google OAuth:
    ```bash
    npx ampx sandbox secret set GOOGLE_CLIENT_ID
    npx ampx sandbox secret set GOOGLE_CLIENT_SECRET
    ```
    Enter the values from step 1 when prompted.
 
-4. Deploy to sandbox for testing:
+3. Deploy to sandbox for testing:
    ```bash
    npx ampx sandbox
    ```
+   This will create a cloud sandbox environment for development.
 
-5. Once tested, deploy to production:
+4. Once tested, deploy to production:
    ```bash
    npx ampx deploy --branch main
    ```
 
-6. After deployment, copy the generated `amplify_outputs.json` file to:
+5. After deployment, copy the generated `amplify_outputs.json` file to:
    - `/front/src/amplify_outputs.json`
 
 ## 4. Environment Variables
