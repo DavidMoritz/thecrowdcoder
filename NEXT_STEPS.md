@@ -122,7 +122,9 @@ Run the application locally to ensure everything works.
 npm run dev
 ```
 Backend will run on `http://localhost:3000`
+The Crowd Coder is great on desktop, but most people check their phones 100+ times a day.
 
+We're missing opportunities for spontaneous idea discovery and quick micro-pledges when users are on-the-go. A mobile app would make it easier to stay engaged with the community and back great ideas the moment inspiration strikes.
 ### Terminal 2 - Frontend:
 ```bash
 cd front
@@ -131,8 +133,8 @@ npm run dev
 Frontend will run on `http://localhost:5173`
 
 ### Test the following:
-- [ ] Sign in with Google OAuth
-- [ ] Create a new idea
+- [✅] Sign in with Google OAuth
+- [✅] Create a new idea
 - [ ] Purchase tokens (use Stripe test card: 4242 4242 4242 4242)
 - [ ] Pledge tokens to an idea
 - [ ] Submit a developer bid
